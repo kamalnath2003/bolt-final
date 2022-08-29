@@ -1,0 +1,16 @@
+#:kivy 1.0.9
+
+<Root>:
+
+    orientation: 'vertical'
+    RecordButton:
+        id: record_button
+        background_normal: "BOLTup.png"
+        background_down: "BOLTdown.png"
+        on_release: self.record()
+        size_hint: 1.1, 0.55
+        pos_hint: {"x":0, "y":0}
+
+    TextInput:
+        text: record_button.output
+        readonly: False
